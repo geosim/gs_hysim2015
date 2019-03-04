@@ -1,0 +1,614 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_PARAMETERS_H2O, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG_PARAMETERS_GB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DIALOG_PARAMETERS_GM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DIALOG_PARAMETERS_CD_H2O, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_DIALOG_PARAMETERS_CD_GB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DIALOG_PARAMETERS_CD_GM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DIALOG_DIAMC_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_DIAMC_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_SCELTASIMULAZIONI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DIALOG_NETS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PARAMETERS_H2O DIALOGEX 0, 0, 324, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Rete Acqua"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,7,11,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,116,7,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,25,310,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,20,44,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,90,40,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,180,35,130,50
+    LTEXT           "&Carico [m]:",IDC_STATIC,195,54,34,8
+    EDITTEXT        IDC_CARICO,240,50,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [l/s]:",IDC_STATIC,195,69,40,8
+    EDITTEXT        IDC_PORTATA,240,65,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Convergenza Pompe",IDC_STATIC,7,97,155,75
+    GROUPBOX        "Controllo",IDC_STATIC,47,107,75,25,WS_GROUP
+    CONTROL         "&Sì",IDC_CONV_SI,"Button",BS_AUTORADIOBUTTON | WS_GROUP,57,117,22,10
+    CONTROL         "&No",IDC_CONV_NO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,87,117,25,10
+    LTEXT           "&Fattore di smorzamento:",IDC_STATIC,17,141,76,8
+    EDITTEXT        IDC_SMORZAMENTO,97,137,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Valore di controllo [l/s]:",IDC_STATIC,17,156,73,8
+    EDITTEXT        IDC_CONTROLLO,97,152,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,167,97,150,50
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,177,117,70,8
+    EDITTEXT        IDC_VELOCITA,253,112,59,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [l/s]:",IDC_STATIC,177,131,63,8
+    EDITTEXT        IDC_MINPORTATA,253,127,59,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,180,181,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,226,181,43,14
+    PUSHBUTTON      "?",IDHELP,273,181,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,272,155,45,15,NOT WS_VISIBLE
+    CONTROL         "Calcola tutte le reti della classe",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,8,113,10
+    CONTROL         "Aggiorna grafica",IDC_UPD_GPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,18,67,10
+    PUSHBUTTON      "Carica...",IDLOAD,7,181,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,56,181,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,104,181,70,14
+END
+
+IDD_DIALOG_PARAMETERS_GB DIALOGEX 0, 0, 324, 204
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Rete Gas Bassa Pressione"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,10,15,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,120,10,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Densità relativa:",IDC_STATIC,10,35,52,8
+    EDITTEXT        IDC_DENS_RELATIVA,120,30,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,55,310,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,15,75,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,85,71,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,175,65,130,45
+    LTEXT           "&Carico [mm]:",IDC_STATIC,185,80,46,8
+    EDITTEXT        IDC_CARICO,240,75,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [mc/h]:",IDC_STATIC,185,95,52,8
+    EDITTEXT        IDC_PORTATA,240,90,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "OK",IDOK,182,183,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,227,183,43,14
+    PUSHBUTTON      "?",IDHELP,273,183,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,272,156,45,15,NOT WS_VISIBLE
+    CONTROL         "Calcola tutte le reti della classe",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,23,113,10
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,7,125,150,46
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,17,140,70,8
+    EDITTEXT        IDC_VELOCITA,93,139,59,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [mc/h]:",IDC_STATIC,17,154,72,8
+    EDITTEXT        IDC_MINPORTATA,93,153,59,12,ES_AUTOHSCROLL
+    CONTROL         "Aggiorna grafica",IDC_UPD_GPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,35,67,10
+    PUSHBUTTON      "Carica...",IDLOAD,7,183,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,56,183,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,104,183,70,14
+END
+
+IDD_DIALOG_PARAMETERS_GM DIALOGEX 0, 0, 324, 204
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Rete Gas Media Pressione"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,10,15,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,120,10,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Densità relativa:",IDC_STATIC,10,35,52,8
+    EDITTEXT        IDC_DENS_RELATIVA,120,30,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,55,308,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,15,75,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,85,71,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,175,65,130,45
+    LTEXT           "&Carico [Kg/cm3]:",IDC_STATIC,180,80,55,8
+    EDITTEXT        IDC_CARICO,240,75,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [mc/h]:",IDC_STATIC,180,95,52,8
+    EDITTEXT        IDC_PORTATA,240,90,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "OK",IDOK,180,183,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,226,183,43,14
+    PUSHBUTTON      "?",IDHELP,273,183,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,272,162,45,15,NOT WS_VISIBLE
+    CONTROL         "Calcola tutte le reti della classe",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,23,113,10
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,7,125,150,46
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,17,140,70,8
+    EDITTEXT        IDC_VELOCITA,93,139,59,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [mc/h]:",IDC_STATIC,17,154,72,8
+    EDITTEXT        IDC_MINPORTATA,93,153,59,12,ES_AUTOHSCROLL
+    CONTROL         "Aggiorna grafica",IDC_UPD_GPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,35,67,10
+    PUSHBUTTON      "Carica...",IDLOAD,7,183,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,56,183,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,104,183,70,14
+END
+
+IDD_DIALOG_PARAMETERS_CD_H2O DIALOGEX 0, 0, 324, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Progettazione Diametri Rete Acqua"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,7,11,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,116,7,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,25,310,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,20,44,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,90,40,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,180,35,130,50
+    LTEXT           "&Carico [m]:",IDC_STATIC,195,54,34,8
+    EDITTEXT        IDC_CARICO,240,50,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [l/s]:",IDC_STATIC,195,69,40,8
+    EDITTEXT        IDC_PORTATA,240,65,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Convergenza Pompe",IDC_STATIC,7,95,155,75
+    GROUPBOX        "Controllo",IDC_STATIC,47,105,75,25
+    CONTROL         "&Sì",IDC_CONV_SI,"Button",BS_AUTORADIOBUTTON | WS_GROUP,57,114,22,10
+    CONTROL         "&No",IDC_CONV_NO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,87,114,25,10
+    LTEXT           "&Fattore di smorzamento:",IDC_STATIC,17,138,76,8
+    EDITTEXT        IDC_SMORZAMENTO,97,135,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Valore di controllo [l/s]:",IDC_STATIC,17,154,73,8
+    EDITTEXT        IDC_CONTROLLO,97,150,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,167,95,150,50
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,177,114,70,8
+    EDITTEXT        IDC_VELOCITA,253,110,59,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [l/s]:",IDC_STATIC,177,129,63,8
+    EDITTEXT        IDC_MINPORTATA,253,124,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Calcolo Diametri",IDC_STATIC,7,172,310,66
+    LTEXT           "&Lista elenchi diametri commerciali:",IDC_STATIC,17,184,116,8
+    COMBOBOX        IDC_LISTA_DC,155,182,95,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Velocità di &riferimento [m/s]:",IDC_STATIC,18,206,88,8
+    EDITTEXT        IDC_VEL_RIF,155,201,40,14,ES_AUTOHSCROLL
+    LTEXT           "N&umero iterazioni di calcolo [1..9]:",IDC_STATIC,18,222,107,8
+    EDITTEXT        IDC_ITERAZ,155,217,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,180,244,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,226,244,43,14
+    PUSHBUTTON      "?",IDHELP,273,244,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,272,224,45,15,NOT WS_VISIBLE
+    PUSHBUTTON      "Carica...",IDLOAD,7,244,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,55,244,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,103,244,70,14
+END
+
+IDD_DIALOG_PARAMETERS_CD_GB DIALOGEX 0, 0, 374, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"GEOsim PRESSURE NETWORK - Progettazione Diametri Rete Gas Bassa Press."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,10,15,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,120,11,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Densità relativa:",IDC_STATIC,10,30,52,8
+    EDITTEXT        IDC_DENS_RELATIVA,120,27,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,45,360,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,20,65,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,90,61,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,228,55,130,50
+    LTEXT           "&Carico [mm]:",IDC_STATIC,237,73,46,8
+    EDITTEXT        IDC_CARICO,293,70,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [mc/h]:",IDC_STATIC,237,89,52,8
+    EDITTEXT        IDC_PORTATA,293,85,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Calcolo Diametri",IDC_STATIC,7,114,225,66
+    LTEXT           "&Lista elenchi diametri commerciali:",IDC_STATIC,17,128,116,8
+    COMBOBOX        IDC_LISTA_DC,131,126,95,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Velocità di &riferimento [m/s]:",IDC_STATIC,17,147,88,8
+    EDITTEXT        IDC_VEL_RIF,131,142,40,13,ES_AUTOHSCROLL
+    LTEXT           "N&umero iterazioni di calcolo [1..9]:",IDC_STATIC,17,163,107,8
+    EDITTEXT        IDC_ITERAZ,131,159,40,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,230,189,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,276,189,43,14
+    PUSHBUTTON      "?",IDHELP,324,189,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,322,168,45,15,NOT WS_VISIBLE
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,241,114,126,50
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,247,128,70,8
+    EDITTEXT        IDC_VELOCITA,323,128,35,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [mc/h]:",IDC_STATIC,247,147,72,8
+    EDITTEXT        IDC_MINPORTATA,323,143,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Carica...",IDLOAD,7,189,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,56,189,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,104,189,70,14
+END
+
+IDD_DIALOG_PARAMETERS_CD_GM DIALOGEX 0, 0, 374, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"GEOsim PRESSURE NETWORK - Progettazione Diametri Rete Gas Media Press."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coeff. &moltiplicativo dei consumi:",IDC_STATIC,10,15,103,8
+    EDITTEXT        IDC_COEFF_PORTATE,120,10,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Densità relativa:",IDC_STATIC,10,30,52,8
+    EDITTEXT        IDC_DENS_RELATIVA,120,25,59,12,ES_AUTOHSCROLL
+    GROUPBOX        "Convergenza Rete",IDC_STATIC,7,45,360,65
+    LTEXT           "&Tipologia controllo:",IDC_STATIC,20,65,60,8
+    COMBOBOX        IDC_COMBO_TIPOLOGIA,90,61,80,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valore/i controllo",IDC_STATIC,222,54,136,50
+    LTEXT           "&Carico [Kg/cm3]:",IDC_STATIC,231,73,55,8
+    EDITTEXT        IDC_CARICO,293,69,59,12,ES_AUTOHSCROLL
+    LTEXT           "&Portata [mc/h]:",IDC_STATIC,231,88,52,8
+    EDITTEXT        IDC_PORTATA,293,84,59,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Calcolo Diametri",IDC_STATIC,7,114,226,66
+    LTEXT           "&Lista elenchi diametri commerciali:",IDC_STATIC,17,128,116,8
+    COMBOBOX        IDC_LISTA_DC,131,126,95,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Velocità di &riferimento [m/s]:",IDC_STATIC,17,147,88,8
+    EDITTEXT        IDC_VEL_RIF,131,142,40,13,ES_AUTOHSCROLL
+    LTEXT           "N&umero iterazioni di calcolo [1..9]:",IDC_STATIC,17,163,107,8
+    EDITTEXT        IDC_ITERAZ,131,159,40,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,231,189,42,14
+    PUSHBUTTON      "Annulla",IDCANCEL,277,189,43,14
+    PUSHBUTTON      "?",IDHELP,324,189,43,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,322,167,45,15,NOT WS_VISIBLE
+    GROUPBOX        "Convergenza PRV",IDC_STATIC,241,114,126,50
+    LTEXT           "Minima v&elocità [m/s]:",IDC_STATIC,247,128,70,8
+    EDITTEXT        IDC_VELOCITA,323,128,35,12,ES_AUTOHSCROLL
+    LTEXT           "Minima p&ortata [mc/h]:",IDC_STATIC,247,147,72,8
+    EDITTEXT        IDC_MINPORTATA,323,143,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Carica...",IDLOAD,7,189,43,14
+    PUSHBUTTON      "Salva...",IDSAVE,56,189,43,14
+    PUSHBUTTON      "Reimposta default",IDDEFAULT,104,189,70,14
+END
+
+IDD_DIALOG_DIAMC_LIST DIALOGEX 0, 0, 262, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Gestione Diametri Commerciali"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Elenchi diametri commerciali",IDC_STATIC,15,5,89,8
+    LISTBOX         IDC_DIAMC,15,17,140,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Nuovo...",IDC_NEW,185,20,55,15
+    PUSHBUTTON      "&Modifica...",IDC_MODI,185,45,55,15
+    PUSHBUTTON      "&Elimina",IDC_CANC,185,70,55,15
+    PUSHBUTTON      "&Chiudi",IDOK,74,109,50,14
+    PUSHBUTTON      "?",IDC_DIAMHELP,137,109,50,14
+END
+
+IDD_DIALOG_DIAMC_SET DIALOGEX 0, 0, 297, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK - Editazione Elenco Diametri Commerciali"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Nome Elenco",IDC_STATIC,15,7,55,10
+    EDITTEXT        IDC_NAME,70,5,95,12,ES_AUTOHSCROLL
+    LTEXT           "&Elenco valori",IDC_STATIC,15,25,45,8
+    LISTBOX         IDC_DIAMC_SET,15,35,110,65,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,135,30,145,70
+    LTEXT           "&Valore",IDC_STATIC,150,50,25,8
+    EDITTEXT        IDC_VALUE,150,60,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Inserisci",IDC_INSERT,215,40,55,15
+    PUSHBUTTON      "&Aggiorna",IDC_UPDATE,215,60,55,15
+    PUSHBUTTON      "&Cancella",IDC_ERASE,215,80,55,15
+    PUSHBUTTON      "OK",IDOK,65,110,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,125,110,50,14
+    DEFPUSHBUTTON   "Falso fuoco",IDC_BUTTON1,7,108,45,15,NOT WS_VISIBLE
+    PUSHBUTTON      "?",IDC_DIAMHELP,183,109,50,14
+END
+
+IDD_DIALOG_SCELTASIMULAZIONI DIALOG 0, 0, 145, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Seleziona Simulazione"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,17,67,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,80,67,50,14
+    LISTBOX         IDC_ListaSimulazioni,7,7,131,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CONNECT DIALOGEX 0, 0, 150, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Direzione del flusso",IDC_FLOWRADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,20,84,9
+    CONTROL         "Inverso della direzione del flusso",IDC_INVERSEFLOWRADIO,
+                    "Button",BS_AUTORADIOBUTTON,14,32,120,10
+    CONTROL         "Nessuno controllo",IDC_NOFLOWRADIO,"Button",BS_AUTORADIOBUTTON,14,44,73,10
+    CONTROL         "Controllo stato delle valvole",IDC_VALVECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,65,105,10
+    DEFPUSHBUTTON   "OK",IDOK,7,85,38,14
+    PUSHBUTTON      "Annulla",IDCANCEL,56,85,38,14
+    PUSHBUTTON      "?",IDC_FLOWHELP,105,85,38,14
+    GROUPBOX        "Controllo flussi",IDC_FLOWBORDER,7,6,136,53
+END
+
+IDD_DIALOG_NETS DIALOGEX 0, 0, 164, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim PRESSURE NETWORK"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_NET_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,17,135,140,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Evidenzia rete corrente",IDC_EVID_BUTTON,35,163,93,14
+    PUSHBUTTON      "Chiudi",IDOK,23,192,50,14
+    PUSHBUTTON      "?",IDC_NET_HELP,92,192,50,14
+    GROUPBOX        "Lista delle reti",IDC_STATIC,7,7,150,177
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ASCENDING_ORDER     BITMAP                  "ascendin.bmp"
+IDB_DESCENDING_ORDER    BITMAP                  "descendig.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "GS_HYSIM ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "GS_HYSIM"
+            VALUE "LegalCopyright", "Copyright © 2012"
+            VALUE "OriginalFilename", "GS_HYSIM.arx"
+            VALUE "ProductName", "GS_HYSIM Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "GS_HYSIM"
+END
+
+STRINGTABLE
+BEGIN
+    HY_STRING200            "Cancellazione dell'elenco "
+    HY_STRING201            "Selezione non valida per il Calcolo Diametri"
+    HY_STRING202            "GEOsim PRESSURE NETWORK"
+    HY_STRING203            "."
+    HY_STRING204            "Valore già presente."
+    HY_STRING205            "Elaborati:"
+    HY_STRING206            "- Serbatoi: %d"
+    HY_STRING207            "- Pompe: %d"
+END
+
+STRINGTABLE
+BEGIN
+    HY_STRING208            "- Prv: %d"
+    HY_STRING209            "- Valvole: %d"
+    HY_STRING210            "- Nodi: %d"
+    HY_STRING211            "- Lati: %d"
+    HY_STRING212            "- Regolatori: %d"
+    HY_STRING213            "\nAggiornati:"
+    HY_STRING215            "\nLunghezza di un attributo della sottoclasse %s della classe %s non adeguata per i seguenti nuovi valori:"
+    HY_STRING216            "\nCARICO=%d \nPRESSIONE=%d \nEROGAZIONE=%d"
+    HY_STRING217            "\nPORTATA_IN=%d \nPORTATA_FI=%d \nVELOCITA=%d \nPERD_CARIC=%d"
+    HY_STRING218            "\nDIAMETRO=%d"
+    HY_STRING219            "\nQ_USCENTE=%d"
+    HY_STRING220            "\nPREVALENZA=%f \nPORTATA=%f"
+    HY_STRING221            "\nPRES_MONTE=%f \nPRES_VALLE=%f \nCARI_MONTE=%f \nCARI_VALLE=%f\n"
+    HY_STRING222            "Il file <pompe.ini>, contenente le curve caratteristiche delle pompe, non esiste."
+    HY_STRING223            "Il modulo di simulazione idraulica <simula.arx> non esiste."
+END
+
+STRINGTABLE
+BEGIN
+    HY_STRING224            "La curva caratteristica di una pompa della rete non è definita nel file <pompe.ini>."
+    HY_STRING225            "Il campo <CALC> non esiste."
+    HY_STRING226            "Diametro nullo."
+    HY_STRING227            "Selezionare la rete."
+    HY_STRING228            "Selezione non valida per Simulazione Rete Acqua."
+    HY_STRING229            "Selezione non valida per Simulazione Rete Gas Bassa."
+    HY_STRING230            "Selezione non valida per Simulazione Rete Gas Media."
+    HY_STRING231            "Valore non valido."
+    HY_STRING232            "Nome già presente."
+    HY_STRING234            "\nCaricamento GEOsim Network.\n1995-2015 IREN ACQUA GAS S.p.A.\n2015.0.a\n"
+    HY_STRING235            "- Entità nodali: %d"
+    HY_STRING236            "\nL'elemento della rete non è isolabile."
+    HY_STRING237            "\nE' stato impostato il gruppo di selezione <sshy>."
+    HY_STRING238            "Estrarre tutte le entità connesse ?"
+    HY_STRING239            "\nCaricamento informazioni relative ai flussi di rete..."
+END
+
+STRINGTABLE
+BEGIN
+    HY_STRING240            "\nLe direzioni dei fluidi non consentono di completare il comando."
+    HY_STRING241            "\nVerificare le seguenti entità:"
+    HY_STRING242            "\nSottoclasse: %d, codice chiave %ld"
+    HY_STRING243            "Estrarre tutte le entità con età dell'acqua nota ?"
+    HY_STRING244            "\nDisegno punti con quota uguale all'età dell'acqua (%s)."
+    HY_STRING245            "\nI punti saranno disegnati sul layer <%s>..."
+    HY_STRING246            "Sec Min Ore Giorni Auto _ 1 60 3600 86400 -1"
+    HY_STRING247            "Scegliere l'unità di misura del tempo [Sec/Min/Ore/Giorni/<Auto>]: "
+    HY_STRING248            "sec."
+    HY_STRING249            "min."
+    HY_STRING250            "ore"
+    HY_STRING251            "giorni"
+    HY_STRING252            "\nLa struttura della simulazione deve essere modificata:\ni serbatoi e le pompe devono avere gli attributi <TEMPO_INIZIALE>, <CONCENTRAZIONE> e <FATTORE_REAZIONE> (vedi manuale)."
+    HY_STRING253            "\nLa struttura della simulazione deve essere modificata:\ni serbatoi e le pompe devono avere l'attributo <TEMPO_INIZIALE> (vedi manuale)."
+    HY_STRING254            "\nDisegno punti con quota uguale alla concentrazione."
+    HY_STRING255            "\nCoefficiente di reazione (0 per sostanze non reattive) <0>: "
+END
+
+STRINGTABLE
+BEGIN
+    HY_STRING256            "\nLa struttura della simulazione deve essere modificata:\ni lati devono avere l'attributo <FATTORE_REAZIONE> (vedi manuale)."
+    HY_STRING257            "\nLa struttura della simulazione deve essere modificata:\ni serbatoi e le pompe devono avere gli attributi <TEMPO_INIZIALE> e <CONCENTRAZIONE> (vedi manuale)."
+    HY_STRING258            "\nCaricamento informazioni relative ai nodi di rete..."
+    HY_STRING259            "\nInizializzazione nodi..."
+    HY_STRING260            "\nInizializzazione lati..."
+    HY_STRING261            "\nInizializzazione serbatoi..."
+    HY_STRING262            "\nInizializzazione pompe..."
+    HY_STRING263            "\nInizializzazione valvole..."
+    HY_STRING264            "\nInizializzazione PRV..."
+    HY_STRING265            "\nInizializzazione regolatori..."
+    HY_STRING266            "\nTerminata."
+    IDS_STRING267           "nodi"
+    IDS_STRING268           "lati"
+    IDS_STRING269           "serbatoi"
+    IDS_STRING270           "pompe"
+    IDS_STRING271           "valvole"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING272           "prv"
+    IDS_STRING273           "regolatori"
+    IDS_STRING274           "Scrittura"
+    IDS_STRING275           "Lettura"
+    IDS_STRING276           "Inizializzazione"
+    IDS_STRING277           "entità puntuali"
+    IDS_STRING278           "Lettura risultati della simulazione"
+    IDS_STRING279           "Aggiornamento"
+    IDS_STRING280           "entità lineari"
+END
+
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
